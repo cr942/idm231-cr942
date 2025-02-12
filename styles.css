@@ -1,12 +1,25 @@
 html{
     width: 100%;
-    height: 800px;
+    height: 100%;
     background-color: #cab5f9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+}
+
+@font-face {
+    font-family: momentz;
+    src: url(fonts/Momentz.ttf);
 }
 
 h1{
-    font-size: 48px;
+    font-size: 64px;
     text-align: center;
+    font-family: momentz;
+    color: white;
+    margin: 15px 0;
 }
 
 h3{
@@ -17,43 +30,38 @@ p{
     text-align: center;
 }
 
-.content{
-    display: flex;
-    height: fit-content;
-    margin: auto 15px;
-}
-
-.zodiacs{
+.input{
     background-color: white;
-    width: 15%;
-    margin-right: 15px;
+    width: 100%;
     height: auto;
-}
-
-.images{
     display: flex;
     flex-direction: column;
+    gap: 10px;
+    text-align: center;
+    margin-bottom: 15px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.input h2, .input h4{
+    margin: 0;
+}
+
+.zodicats {
+    background-color: rgb(164, 126, 217);
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(3, auto);
+    column-gap: 15px;
+    row-gap: 15px;
+    padding: 15px;
     justify-content: center;
     align-items: center;
-    height: auto;
 }
 
 .cat-icons{
-    width: 75%;
-    margin-bottom: 15px;
-}
-
-.main{
     background-color: white;
     width: 100%;
-    height: 500px;
-    display: flex;
-    flex-direction: column;
-}
-
-.results{
-    background-color: rgb(164, 126, 217);
-    margin: auto 15px auto;
-    height: 100%;
-    margin-bottom: 15px;
+    max-width: 150px;
+    height: auto;
 }
