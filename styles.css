@@ -1,7 +1,6 @@
 html{
     width: 100%;
     height: 100%;
-    background-color: #cab5f9;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -9,9 +8,19 @@ html{
     padding: 0;
 }
 
+body{
+    background-image: url(images/background.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
 @font-face {
     font-family: momentz;
     src: url(fonts/Momentz.ttf);
+}
+@font-face {
+    font-family: lilita;
+    src: url(fonts/LilitaOne-Regular.ttf);
 }
 
 h1{
@@ -31,7 +40,6 @@ p{
 }
 
 .input{
-    background-color: white;
     width: 100%;
     height: auto;
     display: flex;
@@ -45,10 +53,11 @@ p{
 
 .input h2, .input h4{
     margin: 0;
+    font-family: lilita;
+    color: white;
 }
 
 .zodicats {
-    background-color: rgb(164, 126, 217);
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(3, auto);
@@ -60,8 +69,8 @@ p{
 }
 
 .cat-icons{
-    background-color: white;
     width: 100%;
     max-width: 125px;
     height: auto;
+    border-radius: 50%;
 }
