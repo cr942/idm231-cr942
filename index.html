@@ -7,33 +7,65 @@
 </head>
 
 <body>
-    <h1>&lt;Catstrology&gt;</h1>
+    <h1>Marvel Zodiacs</h1>
 
     <div class="input">
-        <h2>What's your Zodicat?</h2>
+        <h2>Which hero are you?</h2>
         <h4>Enter your birthday</h4>
-
         <form action="/action_page.php">
             <input type="date" id="birthday" name="birthday">
             <input type="submit">
           </form>
     </div>
-
-    <div class="zodicats">
-        <img class="cat-icons" src="images/abyssinian.png" alt="abyssinian-cat">
-        <img class="cat-icons" src="images/british.png" alt="british-cat">
-        <img class="cat-icons" src="images/browntabi.png" alt="browntabi-cat">
-        <img class="cat-icons" src="images/calico.png" alt="calico-cat">
-        <img class="cat-icons" src="images/munchkin.png" alt="munchkin-cat">
-        <img class="cat-icons" src="images/orange.png" alt="orange-cat">
-        <img class="cat-icons" src="images/persian.png" alt="persian-cat">
-        <img class="cat-icons" src="images/ragdoll.png" alt="ragdoll-cat">
-        <img class="cat-icons" src="images/russian.png" alt="russian-cat">
-        <img class="cat-icons" src="images/scottish.png" alt="scottish-cat">
-        <img class="cat-icons" src="images/siamese.png" alt="siamese-cat">
-        <img class="cat-icons" src="images/tuxedo.png" alt="tuxedo-cat">
+<hr>
+    <div class="zodiacs">
+        <button id="cloak">
+            <img class="icons" src="images/Cloak.png" alt="Cloak and Dagger">
+        </button>
+        <button id="groot">
+            <img class="icons" src="images/Groot.png" alt="Groot">
+        </button>
+        <button id="hulk">
+            <img class="icons" src="images/Hulk.png" alt="Hulk">
+        </button>
+        <button id="invisible">
+            <img class="icons" src="images/Invisible.png" alt="Invisible Woman">
+        </button>
+        <button id="jeff">
+            <img class="icons" src="images/Jeff.png" alt="Jeff the Shark">
+        </button>
+        <button id="luna">
+            <img class="icons" src="images/Luna.png" alt="Luna Snow">
+        </button>
+        <button id="magik">
+            <img class="icons" src="images/Magik.png" alt="Magik">
+        </button>
+        <button id="magneto">
+            <img class="icons" src="images/Magneto.png" alt="Magneto">
+        </button>
+        <button id="spider">
+            <img class="icons" src="images/Spider.png" alt="Spider-Man">
+        </button>
+        <button id="storm">
+            <img class="icons" src="images/Storm.png" alt="Storm">
+        </button>
+        <button id="strange">
+            <img class="icons" src="images/Strange.png" alt="Dr. Strange">
+        </button>
+        <button id="venom">
+            <img class="icons" src="images/Venom.png" alt="Venom">
+        </button>
     </div>
 
+<div id="results-area">
+    <h2 id="hero-name">Hero Name</h2>
+    <h4 id="date-range">start - end</h4>
+    <div class="hero-info">
+        <img id="hero-image" src="images/Cloak.png" alt="Cloak and Dagger">
+        <p id="description">description description description description description description description description</p>
+    </div>
+</div>
+    <script src="postload.js"></script>
 </body>
 
 </html>

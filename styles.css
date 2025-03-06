@@ -1,38 +1,58 @@
 html{
-    width: 100%;
-    height: 100%;
+    width: 1280px;
+    height: 960px;
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 0;
-    padding: 0;
 }
 
 body{
-    background-image: url(images/background.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
+    background-color: #f3fbff;
 }
 
 @font-face {
-    font-family: momentz;
-    src: url(fonts/Momentz.ttf);
+    font-family: 'refrigerator-light';
+    src: url('fonts/Refrigerator-Deluxe-Light.otf');
 }
+
 @font-face {
-    font-family: lilita;
-    src: url(fonts/LilitaOne-Regular.ttf);
+    font-family: 'refrigerator';
+    src: url('fonts/Refrigerator-Deluxe.otf');
+}
+
+@font-face {
+    font-family: 'refrigerator-bold';
+    src: url('fonts/Refrigerator-Deluxe-Bold.otf');
+}
+
+@font-face {
+    font-family: 'refrigerator-extrabold';
+    src: url('fonts/Refrigerator-Deluxe-ExtraBold.otf');
+}
+
+@font-face {
+    font-family: 'refrigerator-heavy';
+    src: url('fonts/Refrigerator-Deluxe-Heavy.otf');
+}
+
+hr {
+    border: 1px solid rgb(77, 97, 224);
 }
 
 h1{
-    font-size: 64px;
+    font-size: 72px;
     text-align: center;
-    font-family: momentz;
-    color: white;
-    margin: 15px 0;
+    font-family: refrigerator-heavy;
+    color: rgb(77, 97, 224);
+    margin-bottom: 0;
 }
 
 h3{
     text-align: center;
+}
+
+.input h4{
+    font-family: refrigerator-light;
 }
 
 p{
@@ -51,25 +71,97 @@ p{
     padding-bottom: 10px;
 }
 
-.input h2, .input h4{
+.input h2{
     margin: 0;
-    font-family: lilita;
-    color: white;
+    font-size: 40px;
+    font-family: refrigerator-extrabold;
+    color: rgb(77, 97, 224);
 }
 
-.zodicats {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: repeat(3, auto);
-    column-gap: 15px;
-    row-gap: 15px;
-    padding: 15px;
+.input{
     justify-content: center;
     align-items: center;
 }
 
-.cat-icons{
-    width: 100%;
-    max-width: 125px;
-    height: auto;
+.input h4{
+    margin: 0;
+    font-size: 24px;
+    font-family: refrigerator;
+    color: rgb(77, 97, 224);
+}
+
+.bday{
+    display: flex;
+    flex-direction: row;
+    column-gap: 15px;
+}
+
+/*container for the zodiac icons*/
+.zodiacs {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(2, auto);
+    column-gap: 10px;
+    row-gap: 10px;
+    justify-content: center;
+    align-items: center;
+}
+
+.icons{
+    width: 150px;
+}
+
+button{
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+button:active{
+    transform: translate(2px, 2px);
+  
+}
+
+#results-area {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    border: 5px solid rgb(77, 97, 224);
+    border-radius: 15px;
+    padding: 25px;
+  }
+  
+#hero-name{
+   margin: 0;
+}
+
+#date-range{
+    margin: 0;
+    margin-bottom: 15px;
+}
+
+.hero-info {
+    display: flex;
+    align-items: left;
+    gap: 20px; /* Adjust space between the image and description */
+}
+
+#hero-image{
+    width: 300px;
+}
+
+#hero-name{
+    font-size: 64px;
+    font-family: refrigerator-heavy;
+    color: rgb(77, 97, 224);
+}
+#date-range{
+    font-size: 48px;
+    font-family: refrigerator-light;
+    color: rgb(77, 97, 224);
+}
+#description{
+    font-size: 24px;
+    font-family: refrigerator;
+    color: rgb(77, 97, 224);
 }
