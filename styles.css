@@ -1,6 +1,6 @@
 html{
-    width: 1280px;
-    height: 960px;
+    width: 100vw;
+    height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -8,6 +8,8 @@ html{
 
 body{
     background-color: #f3fbff;
+    justify-content: center;
+    align-items: center;
 }
 
 @font-face {
@@ -51,7 +53,7 @@ h3{
     text-align: center;
 }
 
-.input h4{
+#input h4{
     font-family: refrigerator-light;
 }
 
@@ -59,7 +61,7 @@ p{
     text-align: center;
 }
 
-.input{
+#input{
     width: 100%;
     height: auto;
     display: flex;
@@ -71,19 +73,19 @@ p{
     padding-bottom: 10px;
 }
 
-.input h2{
+#input h2{
     margin: 0;
     font-size: 40px;
     font-family: refrigerator-extrabold;
     color: rgb(77, 97, 224);
 }
 
-.input{
+#input{
     justify-content: center;
     align-items: center;
 }
 
-.input h4{
+#input h4{
     margin: 0;
     font-size: 24px;
     font-family: refrigerator;
@@ -97,7 +99,7 @@ p{
 }
 
 /*container for the zodiac icons*/
-.zodiacs {
+#zodiacs {
     display: grid;
     grid-template-columns: repeat(6, 1fr);
     grid-template-rows: repeat(2, auto);
@@ -122,15 +124,52 @@ button:active{
   
 }
 
+#input.hideMe{
+    display: none !important;
+}
+
+#hr.hideMe{
+    display: none !important;
+}
+
+#zodiacs.hideMe{
+    display: none !important;
+}
+
+#results-area.hideMe{
+    display: none !important;
+}
+
 #results-area {
+    position: relative;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     border: 5px solid rgb(77, 97, 224);
     border-radius: 15px;
     padding: 25px;
-  }
-  
+}
+
+#results-area button{
+    border: 5px solid rgb(77, 97, 224);
+    font-family: refrigerator;
+
+}
+
+#results-area img{
+    width: 250px;
+}
+
+#close-button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: none;
+    border: 5px solid rgb(77, 97, 224);
+    font-size: 24px;
+    cursor: pointer;
+}
+
 #hero-name{
    margin: 0;
 }
@@ -141,9 +180,10 @@ button:active{
 }
 
 .hero-info {
+    position: relative;
     display: flex;
     align-items: left;
-    gap: 20px; /* Adjust space between the image and description */
+    gap: 20px;
 }
 
 #hero-image{

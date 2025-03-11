@@ -9,7 +9,7 @@
 <body>
     <h1>Marvel Zodiacs</h1>
 
-    <div class="input">
+    <div id="input" class="hide">
         <h2>Which hero are you?</h2>
         <h4>Enter your birthday</h4>
         <form action="/action_page.php">
@@ -17,8 +17,8 @@
             <input type="submit">
           </form>
     </div>
-<hr>
-    <div class="zodiacs">
+    <hr id="hr">
+    <div id="zodiacs">
         <button id="cloak">
             <img class="icons" src="images/Cloak.png" alt="Cloak and Dagger">
         </button>
@@ -57,15 +57,30 @@
         </button>
     </div>
 
-<div id="results-area">
+<div id="results-area" class="hideMe">
     <h2 id="hero-name">Hero Name</h2>
     <h4 id="date-range">start - end</h4>
     <div class="hero-info">
         <img id="hero-image" src="images/Cloak.png" alt="Cloak and Dagger">
-        <p id="description">description description description description description description description description</p>
+        <p id="description">description...</p>
     </div>
+    <button id="close-button">Close</button>
 </div>
-    <script src="postload.js"></script>
+
+<audio id="cloak-voice" src="voices/cloak-voice.mp3"></audio>
+<audio id="groot-voice" src="voices/groot-voice.mp3"></audio>
+<audio id="hulk-voice" src="voices/hulk-voice.mp3"></audio>
+<audio id="invisible-voice" src="voices/invisible-voice.mp3"></audio>
+<audio id="jeff-voice" src="voices/jeff-voice.mp3"></audio>
+<audio id="luna-voice" src="voices/luna-voice.mp3"></audio>
+<audio id="magik-voice" src="voices/magik-voice.mp3"></audio>
+<audio id="magneto-voice" src="voices/magneto-voice.mp3"></audio>
+<audio id="spider-voice" src="voices/spider-voice.mp3"></audio>
+<audio id="storm-voice" src="voices/storm-voice.mp3"></audio>
+<audio id="strange-voice" src="voices/strange-voice.mp3"></audio>
+<audio id="venom-voice" src="voices/venom-voice.mp3"></audio>
+
+<script src="postload.js"></script>
 </body>
 
 </html>
