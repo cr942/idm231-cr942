@@ -89,7 +89,7 @@ function displayInfo(whichOne) {
         case 'cloak':
             heronameObj.innerHTML = "Cloak and Dagger";
             heroimageObj.src = "images/Cloak.png";
-            daterangeObj.innerHTML = "Jan 1 - 19";
+            daterangeObj.innerHTML = "March 21 - April 19";
             descriptionObj.innerHTML = "A mysterious hero with the power of invisibility and combat expertise.";
             resultsAreaObj.classList.remove("hideMe");
             inputObj.classList.add("hideMe");
@@ -101,7 +101,7 @@ function displayInfo(whichOne) {
         case 'groot':
             heronameObj.innerHTML = "Groot";
             heroimageObj.src = "images/Groot.png";
-            daterangeObj.innerHTML = "Jan 20 - Feb 28";
+            daterangeObj.innerHTML = "August 23 - September 22";
             descriptionObj.innerHTML = "A sentient tree with the ability to regenerate and grow.";
             resultsAreaObj.classList.remove("hideMe");
             inputObj.classList.add("hideMe");
@@ -113,7 +113,7 @@ function displayInfo(whichOne) {
         case 'hulk':
             heronameObj.innerHTML = "The Hulk";
             heroimageObj.src = "images/Hulk.png";
-            daterangeObj.innerHTML = "Mar 1 - Mar 30";
+            daterangeObj.innerHTML = "October 24 - November 21";
             descriptionObj.innerHTML = "A scientist turned giant, green powerhouse with immense strength.";
             resultsAreaObj.classList.remove("hideMe");
             inputObj.classList.add("hideMe");
@@ -125,7 +125,7 @@ function displayInfo(whichOne) {
         case 'invisible':
             heronameObj.innerHTML = "Invisible Woman";
             heroimageObj.src = "images/Invisible.png";
-            daterangeObj.innerHTML = "Apr 1 - Apr 30";
+            daterangeObj.innerHTML = "December 22 - January 19";
             descriptionObj.innerHTML = "A hero with the ability to turn invisible and create force fields.";
             resultsAreaObj.classList.remove("hideMe");
             inputObj.classList.add("hideMe");
@@ -136,7 +136,7 @@ function displayInfo(whichOne) {
         case 'jeff':
             heronameObj.innerHTML = "Jeff";
             heroimageObj.src = "images/Jeff.png";
-            daterangeObj.innerHTML = "May 1 - May 15";
+            daterangeObj.innerHTML = "September 23 - October 23";
             descriptionObj.innerHTML = "An unlikely hero with an undefined yet powerful ability.";
             resultsAreaObj.classList.remove("hideMe");
             inputObj.classList.add("hideMe");
@@ -148,7 +148,7 @@ function displayInfo(whichOne) {
         case 'luna':
             heronameObj.innerHTML = "Luna";
             heroimageObj.src = "images/Luna.png";
-            daterangeObj.innerHTML = "Jun 1 - Jun 30";
+            daterangeObj.innerHTML = "June 22 - July 22";
             descriptionObj.innerHTML = "A lunar-powered hero with the ability to control tides and phases.";
             resultsAreaObj.classList.remove("hideMe");
             inputObj.classList.add("hideMe");
@@ -160,7 +160,7 @@ function displayInfo(whichOne) {
         case 'magik':
             heronameObj.innerHTML = "Magik";
             heroimageObj.src = "images/Magik.png";
-            daterangeObj.innerHTML = "Jul 1 - Jul 31";
+            daterangeObj.innerHTML = "February 19 - March 20";
             descriptionObj.innerHTML = "A powerful sorceress who can teleport and control mystical forces.";
             resultsAreaObj.classList.remove("hideMe");
             inputObj.classList.add("hideMe");
@@ -168,10 +168,11 @@ function displayInfo(whichOne) {
             zodiacsObj.classList.add("hideMe");
             playAudio("magik-voice");
             break;
+
         case 'magneto':
             heronameObj.innerHTML = "Magneto";
             heroimageObj.src = "images/Magneto.png";
-            daterangeObj.innerHTML = "Aug 1 - Aug 31";
+            daterangeObj.innerHTML = "May 21 - June 21";
             descriptionObj.innerHTML = "A master of magnetism with the power to control metal.";
             resultsAreaObj.classList.remove("hideMe");
             inputObj.classList.add("hideMe");
@@ -183,7 +184,7 @@ function displayInfo(whichOne) {
         case 'spider':
             heronameObj.innerHTML = "Spider-Man";
             heroimageObj.src = "images/Spider.png";
-            daterangeObj.innerHTML = "Sep 1 - Sep 30";
+            daterangeObj.innerHTML = "November 22 - December 21";
             descriptionObj.innerHTML = "A wall-crawling hero with enhanced strength and spider-sense.";
             resultsAreaObj.classList.remove("hideMe");
             inputObj.classList.add("hideMe");
@@ -195,7 +196,7 @@ function displayInfo(whichOne) {
         case 'storm':
             heronameObj.innerHTML = "Storm";
             heroimageObj.src = "images/Storm.png";
-            daterangeObj.innerHTML = "Oct 1 - Oct 31";
+            daterangeObj.innerHTML = "July 23 - August 22";
             descriptionObj.innerHTML = "A mutant with the ability to control the weather.";
             resultsAreaObj.classList.remove("hideMe");
             inputObj.classList.add("hideMe");
@@ -207,7 +208,7 @@ function displayInfo(whichOne) {
         case 'strange':
             heronameObj.innerHTML = "Doctor Strange";
             heroimageObj.src = "images/Strange.png";
-            daterangeObj.innerHTML = "Nov 1 - Nov 30";
+            daterangeObj.innerHTML = "March 21 - April 19";
             descriptionObj.innerHTML = "A sorcerer supreme who defends the world from mystical threats.";
             resultsAreaObj.classList.remove("hideMe");
             inputObj.classList.add("hideMe");
@@ -219,7 +220,7 @@ function displayInfo(whichOne) {
         case 'venom':
             heronameObj.innerHTML = "Venom";
             heroimageObj.src = "images/Venom.png";
-            daterangeObj.innerHTML = "Dec 1 - Dec 31";
+            daterangeObj.innerHTML = "January 20 - February 18";
             descriptionObj.innerHTML = "A symbiote-powered anti-hero with incredible strength and agility.";
             resultsAreaObj.classList.remove("hideMe");
             inputObj.classList.add("hideMe");
@@ -247,3 +248,51 @@ const allAudios = document.querySelectorAll("audio");
 function playAudio(whichSound){
     document.getElementById(whichSound).play();
 }
+
+// Birthday Input + Submit
+const submitObj = document.getElementById("bday-submit");
+
+submitObj.addEventListener("click", function(event) {
+    event.preventDefault();  // Prevent form submission and page refresh
+
+    const bdayObj = document.getElementById("bday-input").valueAsDate;
+
+    if (bdayObj === null) {
+        alert("Please enter a valid date");
+    } else {
+        const timeZoneOffset = bdayObj.getTimezoneOffset() * 60 * 1000;
+        const bdayEST = new Date(bdayObj.getTime() + timeZoneOffset);
+        console.log("bdayEST is: " + bdayEST);
+
+        const month = bdayEST.getMonth() + 1;
+        const day = bdayEST.getDate();
+
+        if ((month === 1 && day >= 20) || (month === 2 && day <= 18)) {
+            astrological_sign = 'venom';
+        } else if ((month === 2 && day >= 19) || (month === 3 && day <= 20)) {
+            astrological_sign = 'magik';
+        } else if ((month === 3 && day >= 21) || (month === 4 && day <= 19)) {
+            astrological_sign = 'strange';
+        } else if ((month === 4 && day >= 20) || (month === 5 && day <= 20)) {
+            astrological_sign = 'cloak';
+        } else if ((month === 5 && day >= 21) || (month === 6 && day <= 21)) {
+            astrological_sign = 'magneto';
+        } else if ((month === 6 && day >= 22) || (month === 7 && day <= 22)) {
+            astrological_sign = 'luna';
+        } else if ((month === 7 && day >= 23) || (month === 8 && day <= 22)) {
+            astrological_sign = 'storm';
+        } else if ((month === 8 && day >= 23) || (month === 9 && day <= 22)) {
+            astrological_sign = 'groot';
+        } else if ((month === 9 && day >= 23) || (month === 10 && day <= 23)) {
+            astrological_sign = 'jeff';
+        } else if ((month === 10 && day >= 24) || (month === 11 && day <= 21)) {
+            astrological_sign = 'hulk';
+        } else if ((month === 11 && day >= 22) || (month === 12 && day <= 21)) {
+            astrological_sign = 'spider';
+        } else if ((month === 12 && day >= 22) || (month === 1 && day <= 19)) {
+            astrological_sign = 'invisible';
+        }
+        
+        displayInfo(astrological_sign);
+    }
+});

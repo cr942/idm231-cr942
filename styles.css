@@ -1,13 +1,21 @@
-html{
+html, body {
     width: 100vw;
     height: 100vh;
+    background-image: url(images/marvel-background.png);
+    background-size: cover;
+    background-repeat: no-repeat;
     display: flex;
     justify-content: center;
     align-items: center;
+    margin: 0;
+    padding: 0;
 }
 
-body{
-    background-color: #f3fbff;
+.content {
+    width: 1280px;
+    height: 960px;
+    display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
 }
@@ -38,16 +46,18 @@ body{
 }
 
 hr {
-    border: 1px solid rgb(77, 97, 224);
+    border: 1px solid white;
+    width: 75%;
+    margin-bottom: 25px;
 }
 
 h1{
     font-size: 72px;
     text-align: center;
     font-family: refrigerator-heavy;
-    color: rgb(77, 97, 224);
+    color: rgb(255, 0, 0);
     margin-bottom: 0;
-}
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.75);}
 
 h3{
     text-align: center;
@@ -77,7 +87,8 @@ p{
     margin: 0;
     font-size: 40px;
     font-family: refrigerator-extrabold;
-    color: rgb(77, 97, 224);
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, .75);
 }
 
 #input{
@@ -89,13 +100,39 @@ p{
     margin: 0;
     font-size: 24px;
     font-family: refrigerator;
-    color: rgb(77, 97, 224);
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.75);
 }
 
 .bday{
     display: flex;
     flex-direction: row;
     column-gap: 15px;
+}
+
+#bday-input {
+    background: none;
+    border: 5px solid rgb(190, 198, 255);
+    font-size: 24px;
+    cursor: pointer;
+    font-family: refrigerator;
+    color: white;
+    padding: 10px;
+    margin-left: 15px;
+}
+
+#bday-input::-webkit-calendar-picker-indicator {
+    filter: invert(1);
+}
+
+#bday-submit{
+    background: none;
+    border: 5px solid rgb(255, 0, 0);
+    font-size: 24px;
+    cursor: pointer;
+    font-family: refrigerator;
+    color: white;
+    margin-left: 15px;
 }
 
 /*container for the zodiac icons*/
@@ -146,12 +183,13 @@ button:active{
     flex-direction: column;
     align-items: flex-start;
     border: 5px solid rgb(77, 97, 224);
+    background-color: white;
     border-radius: 15px;
     padding: 25px;
 }
 
 #results-area button{
-    border: 5px solid rgb(77, 97, 224);
+    border: 5px solid rgb(255, 0, 0);
     font-family: refrigerator;
 
 }
@@ -165,7 +203,6 @@ button:active{
     top: 10px;
     right: 10px;
     background: none;
-    border: 5px solid rgb(77, 97, 224);
     font-size: 24px;
     cursor: pointer;
 }
@@ -198,7 +235,7 @@ button:active{
 #date-range{
     font-size: 48px;
     font-family: refrigerator-light;
-    color: rgb(77, 97, 224);
+    color: rgb(255, 0, 0);
 }
 #description{
     font-size: 24px;
