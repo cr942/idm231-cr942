@@ -47,8 +47,9 @@ html, body {
 
 hr {
     border: 1px solid white;
-    width: 75%;
-    margin-bottom: 25px;
+    width: 90%;
+    margin-bottom: 30
+    px;
 }
 
 h1{
@@ -69,6 +70,44 @@ h3{
 
 p{
     text-align: center;
+}
+
+#photo-credit{
+    font-family: refrigerator;
+    font-size: 13px;
+    text-decoration: underline;
+    color: rgb(0, 0, 0);
+}
+
+#photo-credit a:hover {
+    text-decoration: underline;
+    color: red;
+}
+
+#photo-credit a {
+    color: #000000;
+    text-decoration: underline;
+}
+
+.bgimage-link {
+    position: fixed;
+    bottom: 10px;
+    left: 10px;
+    font-size: 13px;
+    color: white;
+    padding: 5px;
+    border-radius: 5px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, .75);
+    font-family: refrigerator;
+}
+
+.bgimage-link a {
+    text-decoration: underline;
+    color: white;
+}
+
+.bgimage-link a:hover {
+    color: red;
 }
 
 #input{
