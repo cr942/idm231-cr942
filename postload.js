@@ -110,7 +110,7 @@ function displayInfo(whichOne) {
             heronameObj.innerHTML = "Cloak and Dagger";
             heroimageObj.src = "images/Cloak.png";
             daterangeObj.innerHTML = "March 21 - April 19";
-            descriptionObj.innerHTML = "A mysterious hero with the power of invisibility and combat expertise.";
+            descriptionObj.innerHTML = "Cloak and Daggers are a clear cut representation of the duality of man. They are reserved and mysterious which often intmidates others, and tend to keep to themselves. However, once getting to know them, their kind and compassionate heart is revealed, proving wrong any misconceptions one may have had about them.";
             resultsAreaObj.classList.remove("hideMe");
             inputObj.classList.add("hideMe");
             hrObj.classList.add("hideMe");
@@ -122,7 +122,7 @@ function displayInfo(whichOne) {
             heronameObj.innerHTML = "Groot";
             heroimageObj.src = "images/Groot.png";
             daterangeObj.innerHTML = "August 23 - September 22";
-            descriptionObj.innerHTML = "A sentient tree with the ability to regenerate and grow.";
+            descriptionObj.innerHTML = "Connected to mother nature (literally), Groots are naturally kind and nurturing people. Although they are quiet individuals, they instinctually defend those they care about, using whatever means necessary. The ultimate mama bear!";
             resultsAreaObj.classList.remove("hideMe");
             inputObj.classList.add("hideMe");
             hrObj.classList.add("hideMe");
@@ -134,7 +134,7 @@ function displayInfo(whichOne) {
             heronameObj.innerHTML = "The Hulk";
             heroimageObj.src = "images/Hulk.png";
             daterangeObj.innerHTML = "October 24 - November 21";
-            descriptionObj.innerHTML = "A scientist turned giant, green powerhouse with immense strength.";
+            descriptionObj.innerHTML = "Hulks, although are intelligent and talented people, they are very quick to anger. In this angered state, they may do things they regret after it passes, but Hulks are known for taking accountability, especially if they hurt those that are innocent or that they love. Those that are close to Hulks know they are genuine people and genuine intentions.";
             resultsAreaObj.classList.remove("hideMe");
             inputObj.classList.add("hideMe");
             hrObj.classList.add("hideMe");
@@ -146,7 +146,7 @@ function displayInfo(whichOne) {
             heronameObj.innerHTML = "Invisible Woman";
             heroimageObj.src = "images/Invisible.png";
             daterangeObj.innerHTML = "December 22 - January 19";
-            descriptionObj.innerHTML = "A hero with the ability to turn invisible and create force fields.";
+            descriptionObj.innerHTML = "People are naturally drawn to Invisible Womans due to their radiant personality, physical attractiveness, and intelligence. But regardless of all the attention they receive, they don't center themselves and strictly put their family and loved ones first.";
             resultsAreaObj.classList.remove("hideMe");
             inputObj.classList.add("hideMe");
             hrObj.classList.add("hideMe");
@@ -157,7 +157,7 @@ function displayInfo(whichOne) {
             heronameObj.innerHTML = "Jeff";
             heroimageObj.src = "images/Jeff.png";
             daterangeObj.innerHTML = "September 23 - October 23";
-            descriptionObj.innerHTML = "An unlikely hero with an undefined yet powerful ability.";
+            descriptionObj.innerHTML = "Jeffs are silly, fun-loving people with seemingly no care in the world - except for their best friend(s). Nothing makes them happier than going on adventures with their friend(s) and trying on new outfits! Plus, Jeffs are so cute!";
             resultsAreaObj.classList.remove("hideMe");
             inputObj.classList.add("hideMe");
             hrObj.classList.add("hideMe");
@@ -169,7 +169,7 @@ function displayInfo(whichOne) {
             heronameObj.innerHTML = "Luna";
             heroimageObj.src = "images/Luna.png";
             daterangeObj.innerHTML = "June 22 - July 22";
-            descriptionObj.innerHTML = "A lunar-powered hero with the ability to control tides and phases.";
+            descriptionObj.innerHTML = "Lunas are the friend that sings all the time and loves to be at the center of attention - but they truly are talented. Their energetic and bubbly personality brightens the room, especially if full of people, and they are always down to put on a show!";
             resultsAreaObj.classList.remove("hideMe");
             inputObj.classList.add("hideMe");
             hrObj.classList.add("hideMe");
@@ -181,7 +181,7 @@ function displayInfo(whichOne) {
             heronameObj.innerHTML = "Magik";
             heroimageObj.src = "images/Magik.png";
             daterangeObj.innerHTML = "February 19 - March 20";
-            descriptionObj.innerHTML = "A powerful sorceress who can teleport and control mystical forces.";
+            descriptionObj.innerHTML = "Fierce and determined, Magiks are incredibly powerful people - both physically and mentally. They usually have been through a lot, but have only come out stronger in the end. They don't let their past hold them back, and continue to fight for a better future - both for themselves and their friends.";
             resultsAreaObj.classList.remove("hideMe");
             inputObj.classList.add("hideMe");
             hrObj.classList.add("hideMe");
@@ -193,7 +193,7 @@ function displayInfo(whichOne) {
             heronameObj.innerHTML = "Magneto";
             heroimageObj.src = "images/Magneto.png";
             daterangeObj.innerHTML = "May 21 - June 21";
-            descriptionObj.innerHTML = "A master of magnetism with the power to control metal.";
+            descriptionObj.innerHTML = "Magnetos are extremely ambitious and driven by their passions. Although they accomplish many things, their ambitions often consume them, leading to disatrous consequences. They are leaders by nature, but sometimes prefer to go solo.";
             resultsAreaObj.classList.remove("hideMe");
             inputObj.classList.add("hideMe");
             hrObj.classList.add("hideMe");
@@ -205,7 +205,7 @@ function displayInfo(whichOne) {
             heronameObj.innerHTML = "Spider-Man";
             heroimageObj.src = "images/Spider.png";
             daterangeObj.innerHTML = "November 22 - December 21";
-            descriptionObj.innerHTML = "A wall-crawling hero with enhanced strength and spider-sense.";
+            descriptionObj.innerHTML = "Aloof yet with a sense of responsibility, Spider-Mans are the perfect friend that can balance a good time and hard work. They are spontaneous people that are always looking for the next, fun thing to do, but when duty calls, they put the childish act aside and get straight to business.";
             resultsAreaObj.classList.remove("hideMe");
             inputObj.classList.add("hideMe");
             hrObj.classList.add("hideMe");
@@ -217,7 +217,7 @@ function displayInfo(whichOne) {
             heronameObj.innerHTML = "Storm";
             heroimageObj.src = "images/Storm.png";
             daterangeObj.innerHTML = "July 23 - August 22";
-            descriptionObj.innerHTML = "A mutant with the ability to control the weather.";
+            descriptionObj.innerHTML = "Storms live to lead and guide their people to greatness. They have strong conviction and unwavering determination that makes them someone you don't want to make enemies with. They make their moves with great consideration of others, striving to bring people together regardless of their differences.";
             resultsAreaObj.classList.remove("hideMe");
             inputObj.classList.add("hideMe");
             hrObj.classList.add("hideMe");
@@ -229,7 +229,7 @@ function displayInfo(whichOne) {
             heronameObj.innerHTML = "Doctor Strange";
             heroimageObj.src = "images/Strange.png";
             daterangeObj.innerHTML = "March 21 - April 19";
-            descriptionObj.innerHTML = "A sorcerer supreme who defends the world from mystical threats.";
+            descriptionObj.innerHTML = "Dr. Stranges are the most serious people you'll ever meet. They are workaholics burdened by great responsibilities that they often keep to themselves. They have a great sense of duty and obligation, making them a great friend to call when you're in a pinch.";
             resultsAreaObj.classList.remove("hideMe");
             inputObj.classList.add("hideMe");
             hrObj.classList.add("hideMe");
@@ -241,7 +241,7 @@ function displayInfo(whichOne) {
             heronameObj.innerHTML = "Venom";
             heroimageObj.src = "images/Venom.png";
             daterangeObj.innerHTML = "January 20 - February 18";
-            descriptionObj.innerHTML = "A symbiote-powered anti-hero with incredible strength and agility.";
+            descriptionObj.innerHTML = "A friend that's chill but a little weird, Venoms will always keep you on your toes. They are relatively unstable and unpredictable, but undoubtedly a caring and reliable individual. They're there when you need them the most and are very protective of their loved ones - though their methods may be questionable.";
             resultsAreaObj.classList.remove("hideMe");
             inputObj.classList.add("hideMe");
             hrObj.classList.add("hideMe");
