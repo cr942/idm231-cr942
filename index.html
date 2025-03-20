@@ -10,13 +10,20 @@
     <div class="content">
         <h1>Marvel Zodiacs</h1>
 
-        <div id="input" class="hide">
+        <div id="input">
             <h2>Which hero are you?</h2>
             <h4>Enter your birthday</h4>
             <form action="">
                 <input type="date" id="bday-input" name="birthday">
                 <input type="submit" value="Submit" id="bday-submit">
             </form>
+            <button id="help-button">Need help?</button>
+            <div id="help-popup" class="hideMe">
+                <button id="closehelp-button">Close</button>
+                <h2>Instructions</h2>
+                <p>Enter your birthday in the mm/dd/yyyy field and click submit.</p>
+                <p>Or, click on any one of the 12 heroes below!</p>
+            </div>
         </div>
         <hr id="hr">
         <div id="zodiacs">

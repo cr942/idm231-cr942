@@ -31,6 +31,26 @@ const heroimageObj = document.getElementById("hero-image");
 const daterangeObj = document.getElementById("date-range");
 const descriptionObj = document.getElementById("description");
 
+//Help Button + Close Button
+const helpButtonObj = document.getElementById("help-button");
+const closeHelpObj = document.getElementById("closehelp-button");
+
+// Help Display
+const helpDisplayObj = document.getElementById("help-popup");
+
+//Press help button to open up the instructions (and hide the help button)
+helpButtonObj.addEventListener("click", function(){
+    helpDisplayObj.classList.remove("hideMe");
+    closeHelpObj.classList.remove("hideMe");
+    helpButtonObj.classList.add("hideMe");
+})
+
+closeHelpObj.addEventListener("click", function(){
+    helpDisplayObj.classList.add("hideMe");
+    closeHelpObj.classList.add("hideMe");
+    helpButtonObj.classList.remove("hideMe");
+})
+
 // Get all buttons to call one central function
 cloakObj.addEventListener("click", function() {
     displayInfo("cloak");
@@ -292,7 +312,7 @@ submitObj.addEventListener("click", function(event) {
         } else if ((month === 12 && day >= 22) || (month === 1 && day <= 19)) {
             astrological_sign = 'invisible';
         }
-        
+
         displayInfo(astrological_sign);
     }
 });

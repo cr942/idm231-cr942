@@ -135,6 +135,38 @@ p{
     margin-left: 15px;
 }
 
+#help-button{
+    margin-top: 5px;
+    font-family: refrigerator-light;
+    font-size: 24px;
+    color: white;
+    text-decoration: underline;
+}
+
+#help-button:hover{
+    color: rgb(255, 0, 0);
+    text-decoration: underline;
+}
+
+#help-popup{
+    font-family: refrigerator;
+    font-size: 24px;
+    color: white;
+}
+
+#closehelp-button{
+    margin-top: 5px;
+    font-family: refrigerator-light;
+    font-size: 24px;
+    color: white;
+    text-decoration: underline;
+}
+
+#closehelp-button:hover{
+    color: rgb(255, 0, 0);
+    text-decoration: underline;
+}
+
 /*container for the zodiac icons*/
 #zodiacs {
     display: grid;
@@ -175,6 +207,33 @@ button:active{
 
 #results-area.hideMe{
     display: none !important;
+}
+
+#help-popup.hideMe{
+    display: none;
+}
+
+#help-button.hideMe{
+    display: none;
+}
+
+#help-popup{
+    border: 5px solid rgb(77, 97, 224);
+    background-color: white;
+    border-radius: 15px;
+    padding: 25px;
+    color: black;
+}
+
+#help-popup h2{
+    color: red;
+    text-shadow: none;
+    text-decoration: underline;
+}
+
+#closehelp-button{
+    color: black;
+    margin-bottom: 15px;
 }
 
 #results-area {
@@ -240,5 +299,5 @@ button:active{
 #description{
     font-size: 24px;
     font-family: refrigerator;
-    color: rgb(77, 97, 224);
+    color: rgb(0, 0, 0);
 }
