@@ -111,7 +111,7 @@ function displayInfo(whichOne) {
         case 'cloak':
             heronameObj.innerHTML = "Cloak and Dagger";
             heroimageObj.src = "images/Cloak.png";
-            daterangeObj.innerHTML = "March 21 - April 19";
+            daterangeObj.innerHTML = "April 20 - May 20";
             descriptionObj.innerHTML = "Cloak and Daggers are a clear cut representation of the duality of man. They are reserved and mysterious which often intimidates others, and tend to keep to themselves. However, once getting to know them, their kind and compassionate heart is revealed, proving wrong any misconceptions one may have had about them.";
             photoCreditObj.innerHTML = 'Photo: <a href="https://marvelrivals.fandom.com/wiki/Cloak_%26_Dagger" target="_blank">https://marvelrivals.fandom.com/wiki/Cloak_%26_Dagger</a>';
             resultsAreaObj.classList.remove("hideMe");
